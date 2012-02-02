@@ -796,7 +796,7 @@ public class Input implements InputProcessor {
 	 * @see com.badlogic.gdx.InputProcessor#touchDown(int, int, int)
 	 */
 	@Override
-	public boolean touchDown(final int x, final int y, final int pointer) {
+	public boolean touchDown(final int x, final int y, final int pointer, int button) {
 		addEvent(new InputEvent() {
 			@Override
 			public void invoke() {
@@ -842,7 +842,7 @@ public class Input implements InputProcessor {
 	 * @see com.badlogic.gdx.InputProcessor#touchUp(int, int, int)
 	 */
 	@Override
-	public boolean touchUp(final int x, final int y, final int pointer) {
+	public boolean touchUp(final int x, final int y, final int pointer, int button) {
 		addEvent(new InputEvent() {
 			@Override
 			public void invoke() {
@@ -879,5 +879,17 @@ public class Input implements InputProcessor {
 		 * Perform whatever action we need to notify the listeners
 		 */
 		public void invoke();
+	}
+
+	@Override
+	public boolean scrolled(int arg0) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean touchMoved(int arg0, int arg1) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }
