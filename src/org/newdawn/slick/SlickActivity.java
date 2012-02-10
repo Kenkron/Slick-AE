@@ -21,6 +21,8 @@ public class SlickActivity extends AndroidApplication {
     public void onCreate(Bundle savedInstanceState) {
     	super.onCreate(savedInstanceState);
     	
+    	org.newdawn.slick.muffin.AndroidMuffin.app = this.getApplicationContext();
+    	
     	org.newdawn.slick.util.Log.setLogSystem(new AndroidLogSystem());
     	org.newdawn.slick.util.Log.error("Slick-AE 0");
     	

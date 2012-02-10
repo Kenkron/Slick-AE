@@ -32,7 +32,8 @@
 			  	<include name="org/newdawn/slick/Input$*.class"/>		
 			  	<include name="org/newdawn/slick/opengl/ImageDataFactory.class"/>	
 			  	<include name="org/newdawn/slick/opengl/renderer/Renderer.class"/>	
-			  	<include name="org/newdawn/slick/opengl/renderer/QuadBasedLineStripRenderer.class"/>			
+			  	<include name="org/newdawn/slick/opengl/renderer/QuadBasedLineStripRenderer.class"/>
+			  	<include name="org/newdawn/slick/SavedState.class"/>				
 			</fileset>
 		</delete>
 		
